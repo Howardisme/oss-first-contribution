@@ -1,0 +1,21 @@
+{
+  "name": "oss-first-contribution",
+  "interface": {
+    "displayName": "OSS First Contribution"
+  },
+  "plugins": [
+    {
+      "name": "oss-first-contribution",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/Howardisme/oss-first-contribution.git",
+        "ref": "main"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

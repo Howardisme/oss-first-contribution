@@ -1,0 +1,20 @@
+{
+  "name": "oss-first-contribution",
+  "version": "0.1.0",
+  "displayName": "OSS First Contribution",
+  "description": "Mentors first-time open source contributors from picking a project to a merged pull request: finds projects that match their interests, checks whether a repo really welcomes newcomers, picks a first issue, and guides the PR.",
+  "author": {
+    "name": "Howardisme",
+    "url": "https://github.com/Howardisme"
+  },
+  "homepage": "https://github.com/Howardisme/oss-first-contribution",
+  "repository": "https://github.com/Howardisme/oss-first-contribution",
+  "license": "MIT",
+  "keywords": [
+    "open-source",
+    "education",
+    "first-contribution",
+    "good-first-issue",
+    "mentoring"
+  ]
+}

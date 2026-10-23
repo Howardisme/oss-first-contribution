@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.zip
+.venv/
+.DS_Store
+.claude/settings.local.json
+# Per-student settings written during a session
+student*.json

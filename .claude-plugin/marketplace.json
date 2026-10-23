@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "oss-first-contribution",
+  "description": "An agent skill that mentors first-time open source contributors.",
+  "owner": {
+    "name": "Howardisme",
+    "url": "https://github.com/Howardisme"
+  },
+  "plugins": [
+    {
+      "name": "oss-first-contribution",
+      "description": "From \"what should I work on?\" to a merged first pull request.",
+      "source": "./",
+      "category": "education"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "_說明": "評估設定。自訂時（例如學生設定檔）只要寫想改的欄位，其他用這裡的預設值。指標說明見 references/metrics.md。",
+
+  "_basic_說明": "基礎資訊（不計分，橫向表格）。可選：stars, forks, open_issues, open_prs, contributors, language, license, created, topics",
+  "basic": ["stars", "forks", "open_issues", "open_prs", "contributors", "language", "license", "created"],
+
+  "_metrics_說明": "客觀指標（計分）。good = 拿滿分的值，bad = 拿 0 分的值，中間線性給分。weight = 權重，設 0 就是不看這項。days_since_last_commit 用 activity_tiers 分級給分。",
+  "metrics": {
+    "days_since_last_commit":         {"weight": 10},
+    "commits_in_window":              {"weight": 3,  "good": 20,  "bad": 1},
+    "merged_prs_in_window":           {"weight": 2,  "good": 10,  "bad": 0},
+    "outside_pr_merge_rate":          {"weight": 25, "good": 0.6, "bad": 0.1},
+    "median_days_to_merge":           {"weight": 10, "good": 3,   "bad": 45},
+    "outside_pr_first_response_days": {"weight": 15, "good": 2,   "bad": 21},
+    "issue_response_rate":            {"weight": 10, "good": 0.9, "bad": 0.3},
+    "median_days_first_response":     {"weight": 5,  "good": 2,   "bad": 30},
+    "issue_close_ratio":              {"weight": 5,  "good": 0.8, "bad": 0.2},
+    "open_newcomer_issues":           {"weight": 5,  "good": 5,   "bad": 0},
+    "bus_factor":                     {"weight": 7,  "good": 3,   "bad": 1},
+    "active_maintainers":             {"weight": 3,  "good": 3,   "bad": 1}
+  },
+
+  "_activity_tiers_說明": "距離上次 commit 的分級。max_days 為 null 代表其餘全部。",
+  "activity_tiers": [
+    {"max_days": 14,   "label": "極度活躍", "score": 100},
+    {"max_days": 30,   "label": "蠻活躍",   "score": 80},
+    {"max_days": 90,   "label": "普通",     "score": 50},
+    {"max_days": 180,  "label": "偏低",     "score": 20},
+    {"max_days": null, "label": "不活躍",   "score": 0}
+  ],
+
+  "_windows_說明": "activity = commit 數、合併 PR 數的時間窗口；ratio = Issue 關閉/新增比的窗口；sustainability = 計算 bus factor 與核心成員的窗口（天）。",
+  "activity_window_days": 30,
+  "ratio_window_days": 90,
+  "sustainability_window_days": 90,
+
+  "_samples_說明": "比例類指標用最近的樣本數，不限時間。outside_prs = 算合併率的外部 PR 數；pr_response = 算首次回應的外部 PR 數；issues = 抽樣的 issue 數；commit_pages = 算 bus factor 最多讀幾頁 commit（每頁 100 筆）。",
+  "samples": {"outside_prs": 30, "pr_response": 8, "issues": 10, "commit_pages": 3},
+
+  "_subjective_說明": "主觀指標，由 AI 助手讀專案後給 1–5 分並附證據。name = 名稱，how = 怎麼判斷，importance = 對學生的重要程度（高/中/低）。",
+  "subjective": [],
+
+  "verdict_thresholds": {
+    "recommended": 70,
+    "caution": 45
+  },
+
+  "dealbreakers": {
+    "archived": true,
+    "max_days_since_last_commit": 365
+  },
+
+  "_verdict_caps_說明": "底線：某項指標低於 below 時，不管總分多高，結論最多只到 max_verdict（recommended / caution / not_recommended）。",
+  "verdict_caps": {
+    "outside_pr_merge_rate": {"below": 0.3, "max_verdict": "caution"},
+    "issue_response_rate":   {"below": 0.5, "max_verdict": "caution"}
+  },
+
+  "_core_min_commits_說明": "近 sustainability_window_days 天內 commit 數達到這個數字的人，視為核心成員（即使 GitHub 沒把他標成組織成員，例如沒公開成員身分的員工）。他們的 PR 和留言不算「外部」。",
+  "core_min_commits": 5,
+
+  "_bot_logins_說明": "額外要當成機器人的帳號（小寫）。腳本已內建常見的機器人帳號，這裡用來補充。",
+  "bot_logins": [],
+
+  "newcomer_labels": [
+    "good first issue",
+    "good first bug",
+    "first timers only",
+    "first-timers-only",
+    "beginner",
+    "beginner friendly",
+    "starter",
+    "easy",
+    "easy fix",
+    "newcomer",
+    "help wanted",
+    "up for grabs",
+    "contributions welcome"
+  ],
+
+  "contribution_type_labels": {
+    "docs":        ["documentation", "docs", "doc"],
+    "translation": ["translation", "translations", "i18n", "l10n", "localization", "localisation"],
+    "tests":       ["test", "tests", "testing", "coverage", "unit test"],
+    "bug":         ["bug", "good first bug"]
+  },
+
+  "_target_locales_說明": "翻譯機會掃描時要找的目標語系（小寫，底線視同連字號）。",
+  "target_locales": ["zh-tw", "zh-hant"]
+}
