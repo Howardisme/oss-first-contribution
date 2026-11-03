@@ -7,12 +7,12 @@
 ## 怎麼新增 · How to add yours
 
 1. 複製範本：中文用 [`_template.zh-TW.md`](_template.zh-TW.md)，英文用 [`_template.md`](_template.md)
-2. 存成 `你的GitHub帳號-sharing編號.md`，編號從 `01` 開始，例如 `howardisme-sharing01.md`；之後再分享就用 `02`、`03`
+2. 存成 `你的GitHub帳號-sharing01.md`；之後再分享就用 `02`、`03`
 3. 照範本填寫
 4. 在下方「分享列表」加一行連結
-5. 送 PR
+5. 送 PR（PR 標題和說明用英文）
 
-*Copy [`_template.md`](_template.md) (English) or [`_template.zh-TW.md`](_template.zh-TW.md) (Chinese), save it as `<username>-sharing<NN>.md` starting from `01` (for example `howard-sharing01.md`), fill it in, add a line to the list below, and open a PR.*
+*Copy [`_template.md`](_template.md) (English) or [`_template.zh-TW.md`](_template.zh-TW.md) (Chinese), save it as `<your-github-account>-sharing01.md` (use `02`, `03` for later stories), fill it in, add a line to the list below, and open a PR with an English title and description.*
 
 ## 分享列表 · Stories
 

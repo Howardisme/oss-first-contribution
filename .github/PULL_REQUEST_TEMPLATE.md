@@ -11,10 +11,10 @@ Closes #
 - [ ] Other
 
 ### Why
-<!-- 為什麼要做這個改動？解決了什麼問題？ -->
+<!-- Why is this change needed? What problem does it solve? -->
 
 ### How
-<!-- 怎麼改的？改了哪些地方？怎麼測試的？ -->
+<!-- What did you change, and where? How did you test it? -->
 
 ### Checklist
 - [ ] Added or updated unit tests for all changes

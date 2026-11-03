@@ -9,18 +9,19 @@ All kinds of contributions are welcome. Sharing your experience, sharing what yo
 | Type | How |
 |---|---|
 | Share your experience | Add a story to [`experiences/`](experiences/) and open a PR (see below) |
-| Report a problem | Use the *回報問題 (bug report)* issue template, and include the conversation excerpt or script output |
-| Suggest a feature | Use the *功能建議 (feature request)* issue template, and discuss before building |
+| Report a problem | Use the *bug report* issue template, and include the conversation excerpt or script output |
+| Suggest a feature | Use the *feature request* issue template, and discuss before building |
 | Improve the skill, docs, or scripts | Open a PR directly. For larger changes, open an issue to discuss first |
 
 ### Sharing your experience
 
 After you finish (or get stuck on) an open source contribution, write it down for the students who come after you. It doesn't matter whether your PR was merged: the parts where you got stuck are often the most useful.
 
-Copy [`experiences/_template.md`](experiences/_template.md) (or the Chinese [`_template.zh-TW.md`](experiences/_template.zh-TW.md)) to `experiences/<username>-sharing<NN>.md`, numbering from `01` (for example `howardisme-sharing01.md`), fill it in, and open a PR. You don't need to know git for this: open the `experiences/` folder on GitHub, choose **Add file → Create new file**, and GitHub will walk you through opening the PR.
+Copy [`experiences/_template.md`](experiences/_template.md) (or the Chinese [`_template.zh-TW.md`](experiences/_template.zh-TW.md)) to `experiences/<your-github-account>-sharing01.md` (use `02`, `03` for later stories), fill it in, and open a PR. You don't need to know git for this: open the `experiences/` folder on GitHub, choose **Add file → Create new file**, and GitHub will walk you through opening the PR.
 
 ## Pull requests
 
+- Write issues, PR descriptions, and replies to review in English, just as you would on a large international project
 - Fill in the PR template. Write N/A for sections that don't apply
 - **If you add or change code in `scripts/`, add unit tests and run the test suite:**
 

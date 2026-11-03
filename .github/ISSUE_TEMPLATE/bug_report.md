@@ -1,21 +1,22 @@
 ---
-name: 回報問題
-about: skill 的指示不合理、腳本出錯或數字不對
-title: "[問題] "
+name: Bug report
+about: The skill's instructions don't make sense, the script fails, or the numbers look wrong
+title: "[Bug] "
 labels: bug
 ---
 
-### 發生了什麼
-<!-- 在哪個階段？AI 助手做了什麼，或腳本輸出了什麼？ -->
+### What happened
+<!-- Which stage were you in? What did the AI assistant do, or what did the script print? -->
 
-### 你預期的是什麼
+### What you expected
 
-### 怎麼重現
-<!-- 腳本問題請附上指令，例如：python scripts/analyze_repo.py health OWNER/REPO -->
+### How to reproduce
+<!-- For script problems, include the command, for example: python scripts/analyze_repo.py health OWNER/REPO -->
 
-### 相關的對話片段或輸出
-<!-- 請先刪掉 token、email 等個人資料 -->
+### Conversation excerpt or output
+<!-- Remove tokens, email addresses, and other personal data first -->
 
-### 環境
-- 使用方式：Claude Code / claude.ai / Codex / GitHub Copilot
-- Python 版本：
+### Environment
+- Assistant: Claude Code / Codex / GitHub Copilot
+- OS:
+- Python version:

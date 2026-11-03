@@ -1,16 +1,16 @@
 ---
-name: 功能建議
-about: 想讓 skill 多做什麼，或改變某個階段的做法
-title: "[功能] "
+name: Feature request
+about: Something you'd like the skill to do, or a change to how a stage works
+title: "[Feature] "
 labels: enhancement
 ---
 
-### 想解決的問題
-<!-- 現在哪裡不方便？最好附上你遇到的情境 -->
+### Problem
+<!-- What's inconvenient today? Describe the situation you ran into, if you can -->
 
-### 想要的行為
+### What you'd like to happen
 
-### 可能要改的檔案
-<!-- 例如：SKILL.md 的階段 3、scripts/analyze_repo.py、references/metrics.md -->
+### Files that may need to change
+<!-- For example: stage 3 in SKILL.md, scripts/analyze_repo.py, references/metrics.md -->
 
-### 其他想法（選填）
+### Other ideas (optional)
